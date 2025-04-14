@@ -1,66 +1,156 @@
+/* Base Styles */
 .app {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 25px;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #f8f9f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(114, 136, 108, 0.1);
+  margin-top: 30px;
+  border: 1px solid #e1e8d9;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+h1 {
+  color: #5a7247;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-
-th {
-  background-color: #f2f2f2;
-  cursor: pointer;
-}
-
-form {
-  margin: 20px 0;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-form div {
-  margin-bottom: 10px;
-}
-
-label {
-  display: inline-block;
-  width: 100px;
-}
-
-input, select {
-  padding: 5px;
-  width: 200px;
-}
-
-button {
-  padding: 5px 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #45a049;
-}
-
+/* Search Bar */
 .search-bar {
-  margin: 20px 0;
+  margin: 25px 0;
+  position: relative;
 }
 
 .search-bar input {
   width: 100%;
-  padding: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #c8d3b9;
+  border-radius: 8px;
   box-sizing: border-box;
+  background-color: #fff;
+  color: #5a7247;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #8a9b6e;
+  box-shadow: 0 0 0 2px rgba(138, 155, 110, 0.2);
+}
+
+.search-bar::after {
+  content: "🔍";
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  color: #8a9b6e;
+  opacity: 0.6;
+}
+
+/* Expense Form */
+.expense-form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  border: 1px solid #e1e8d9;
+  box-shadow: 0 2px 8px rgba(114, 136, 108, 0.08);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #5a7247;
+  font-size: 15px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d8e0cc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fbfcf9;
+  color: #4a5c3e;
+}
+
+.expense-form button {
+  background: #8a9b6e;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  transition: all 0.3s;
+}
+
+.expense-form button:hover {
+  background: #72886c;
+  transform: translateY(-1px);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 30px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(114, 136, 108, 0.1);
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eef0e9;
+}
+
+th {
+  background: #e9ede0;
+  color: #5a7247;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f9f5;
+}
+
+tr:hover {
+  background-color: #f1f4eb;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: #c8d3b9;
+  color: #5a7247;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.delete-btn:hover {
+  background: #b5c2a7;
+  color: #475a3a;
 }

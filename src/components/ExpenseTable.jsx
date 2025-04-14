@@ -16,7 +16,12 @@ const ExpenseTable = ({ expenses, deleteExpense, requestSort }) => {
               <td>${expense.amount.toFixed(2)}</td>
               <td>{expense.category}</td>
               <td>
-                <button onClick={() => deleteExpense(expense.id)}>Delete</button>
+                <button 
+                  onClick={() => deleteExpense(expense.id)}
+                  className="delete-btn"
+                >
+                  Delete
+                </button>
               </td>
             </tr>
           ))}

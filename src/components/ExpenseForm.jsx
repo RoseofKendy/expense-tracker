@@ -14,14 +14,15 @@ const ExpenseForm = ({ setExpenses }) => {
       category
     };
     setExpenses(prev => [...prev, newExpense]);
+    // Reset form
     setDescription('');
     setAmount('');
     setCategory('Food');
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
+    <form onSubmit={handleSubmit} className="expense-form">
+      <div className="form-group">
         <label>Description:</label>
         <input 
           type="text" 
@@ -30,8 +31,9 @@ const ExpenseForm = ({ setExpenses }) => {
           required 
         />
       </div>
-      <div>
-        <label>Amount:</label>
+      
+      <div className="form-group">
+        <label>Amount ($):</label>
         <input 
           type="number" 
           value={amount} 
@@ -41,7 +43,8 @@ const ExpenseForm = ({ setExpenses }) => {
           required 
         />
       </div>
-      <div>
+      
+      <div className="form-group">
         <label>Category:</label>
         <select value={category} onChange={(e) => setCategory(e.target.value)}>
           <option value="Food">Food</option>
@@ -51,6 +54,7 @@ const ExpenseForm = ({ setExpenses }) => {
           <option value="Other">Other</option>
         </select>
       </div>
+      
       <button type="submit">Add Expense</button>
     </form>
   );
