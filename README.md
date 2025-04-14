@@ -1,12 +1,52 @@
-# React + Vite
+🌿 Sage Green Expense Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimalist, nature-inspired expense tracking application built with React. Features a calming sage green color palette and clean interface for effortless financial management.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Add expenses** with description, amount, and category
+- **Real-time filtering** through search functionality
+- **Sortable columns** (description, amount, category)
+- **Delete expenses** with one click
+- **Responsive design** works on all devices
+- **Soothing color palette** for reduced eye strain
 
-## Expanding the ESLint configuration
+🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (v18+)
+- Vite (for fast development)
+- CSS3 (no external UI libraries)
+- ES6+ JavaScript
+
+🚀 Getting Started
+
+Prerequisites
+- Node.js (v16+)
+- npm (v8+)
+
+Installation
+1. Clone the repository:
+   bash
+   git clone https://github.com/your-username/sage-green-expense-tracker.git
+
+cd sage-green-expense-tracker
+
+npm install
+
+npm run dev
+
+src/
+├── components/
+│   ├── ExpenseForm.jsx    # Expense input form
+│   ├── ExpenseTable.jsx   # Displays expenses in table
+│   └── SearchBar.jsx      # Search/filter component
+├── App.jsx                # Main application component
+├── App.css                # Main styles
+└── main.jsx               # Application entry point
+
+🎨 Design Philosophy
+Color Palette: Soothing sage greens (#8a9b6e) with natural tones
+Typography: Clean Nunito Sans font family
+Spacing: Generous whitespace for clarity
+Interaction: Subtle hover effects and transitions
+
