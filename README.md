@@ -50,3 +50,4 @@ Typography: Clean Nunito Sans font family
 Spacing: Generous whitespace for clarity
 Interaction: Subtle hover effects and transitions
 
+Live Demo: https://expense-tracker-two-cyan-90.vercel.app/
